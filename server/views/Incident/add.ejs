@@ -1,42 +1,42 @@
 <% include ../Partials/header.ejs%>
 <% include ../Partials/main_nav.ejs%>
 
-<!-- Content for Edit Page -->
-<div class="container">
+<!-- Content for Add Page -->
+ <div class="container">
     <div class="row">
         <div class="offset-md-3 col-md-6">
             <h1><%= title %></h1>
             <form class="form" method="POST">
                 <div class="form-group">
-                    <label for="nameTextField">Book Title</label>
+                    <label for="nameTextField">Incident Title</label>
                     <input type="text" class="form-control" id="nameTextField"
-                    placeholder="Enter Book Title" name="Name" value='<%= Book.Name %>' required>
+                    placeholder="Enter Incident Title" name="Name" required>
                 </div>
                 <div class="form-group">
-                    <label for="authorTextField">Book Author</label>
+                    <label for="authorTextField">Incident Author</label>
                     <input type="text" class="form-control" id="authorTextField"
-                    placeholder="Enter Author Name" name="Author" value='<%= Book.Author %>' required>
+                    placeholder="Enter Author Name" name="Author" required>
                 </div>
                 <div class="form-group">
                     <label for="publishedTextField">Published</label>
                     <input type="text" class="form-control" id="publishedTextField"
-                    placeholder="Enter Published Year" name="Published" value='<%= Book.Published %>' required>
+                    placeholder="Enter Published Year" name="Published" required>
                 </div>
                 <div class="form-group">
-                    <label for="descriptionTextArea">Book Description</label>
+                    <label for="descriptionTextArea">Incident Description</label>
                     <textarea type="text" class="form-control" id="descriptionTextArea"
-                    placeholder="Enter Book Description" name="Description" required><%= Book.Description %></textarea>
+                    placeholder="Enter Incident Description" name="Description" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="priceTextField">Book Price</label>
+                    <label for="priceTextField">Incident Price</label>
                     <input type="text" class="form-control" id="priceTextField"
-                    placeholder="Enter Book Price" name="Price" value='<%= Book.Price %>' required>
+                    placeholder="Enter Incident Price" name="Price" required>
                 </div>
                 <button class="btn btn-primary" type="submit">Submit <i class="fas fa-edit"></i></button>
                 <button class="btn btn-warning" onclick="window.history.back()">Cancel <i class="fas fa-undo"></i></button>
             </form>
         </div>
     </div>
-</div>
+ </div>
 
 <% include ../Partials/footer.ejs%>
