@@ -10,40 +10,13 @@
           <ul class="navbar-nav ms-auto">
             
             <li class="nav-item">
-              <% if(title=="Home Page") { %>
-                  <a class="nav-link active" href="/home">
+              <% if(title=="Home") { %>
+                  <a class="nav-link active" href="/">
               <% } else { %>
-                  <a class="nav-link" href="/home">
+                  <a class="nav-link" href="/">
               <% } %>
                   <i class="fa-solid fa-igloo"></i> Home</a>
             </li>
-
-            <li class="nav-item">
-              <% if(title=="About") { %>
-                  <a class="nav-link active" href="/about">
-              <% } else { %>
-                  <a class="nav-link" href="/about">
-              <% } %>
-                  <i class="fa-solid fa-circle-info"></i> About</a>
-            </li>
-            
-            <li class="nav-item">
-              <% if(title=="Products") { %>
-                  <a class="nav-link active" href="/products">
-              <% } else { %>
-                  <a class="nav-link" href="/products">
-              <% } %>
-                  <i class="fa-solid fa-gift"></i> Products</a>
-            </li>
-            
-            <li class="nav-item">
-                <% if(title=="Service") { %>
-                    <a class="nav-link active" href="/service">
-                <% } else { %>
-                    <a class="nav-link" href="/service">
-                <% } %>
-                    <i class="fa-solid fa-briefcase"></i> Service</a>
-              </li>
 
               <li class="nav-item">
                 <% if(title=="Books") { %>
@@ -54,15 +27,7 @@
                     <i class="fa-solid fa-book"></i> Books</a>
               </li>
 
-            <li class="nav-item">
-                <% if(title=="Contact") { %>
-                    <a class="nav-link active" href="/contact">
-                <% } else { %>
-                    <a class="nav-link" href="/contact">
-                <% } %>
-                    <i class="fa-solid fa-address-card"></i> Contact</a>
-              </li>
-          
+            
           </ul>
         </div>
       </div>
