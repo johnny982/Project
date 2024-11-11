@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 const mongoose = require('mongoose');
 let DB = require('./db');
 // point mongoose to the DB URI
-mongoose.connect(DB.URI);
+mongoose.connect('mongodb+srv://masontran:Macibelle2013@cluster0.u9sqp.mongodb.net/');
 let mongoDB = mongoose.connection;
 mongoDB.on('error', console.error.bind(console, 'Connection Error'))
 mongoDB.once('open', ()=>{
