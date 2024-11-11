@@ -2,13 +2,12 @@ const mongoose = require('mongoose');
 
 let incidentModel = mongoose.Schema({
     Name: String,
-    Author: String,
-    Published: String,
-    Description: String,
-    Price: Number
+    Time: String,
+    Location: String,
+    Description: String
 },
 {
-    collection: "Bio_books"
+    collection: "Incidents"
 }
 );
 

@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 const mongoose = require('mongoose');
 let DB = require('./db');
 // point mongoose to the DB URI
-mongoose.connect('mongodb+srv://masontran:Macibelle2013@cluster0.u9sqp.mongodb.net/');
+mongoose.connect(DB.URI);
 let mongoDB = mongoose.connection;
 mongoDB.on('error', console.error.bind(console, 'Connection Error'))
 mongoDB.once('open', ()=>{
@@ -27,8 +27,8 @@ mongoDB.once('open', ()=>{
 /*main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/Bio_books');
-  // await mongoose.connect('mongodb+srv://johnathandonnelly:<db_password>@cluster0.spqr7.mongodb.net/');
+  await mongoose.connect('mongodb://127.0.0.1:27017/Incidents');
+  // await mongoose.connect('mongodb+srv://masontran:Macibelle2013@cluster0.u9sqp.mongodb.net/');
 
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }*/

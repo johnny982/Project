@@ -11,18 +11,16 @@
                 <table class="table table-bordered table-striped table-hover">
                     <tr class="d-flex">
                         <th class="text-center col-2">Name</th>
-                        <th class="text-center col-2">Author</th>
-                        <th class="text-center col-1">Published</th>
+                        <th class="text-center col-2">Time</th>
+                        <th class="text-center col-2">Location</th>
                         <th class="text-center col-4">Description</th>
-                        <th class="text-center col-1">Price</th>
                     </tr>
                     <% for(let count=0;count<IncidentList.length;count++) { %>
                     <tr class="d-flex">
                         <td class="text-center col-2"><%= IncidentList[count].Name %></td>
-                        <td class="text-center col-2"><%= IncidentList[count].Author %></td>
-                        <td class="text-center col-1"><%= IncidentList[count].Published%></td>
+                        <td class="text-center col-2"><%= IncidentList[count].Time %></td>
+                        <td class="text-center col-2"><%= IncidentList[count].Location %></td>
                         <td class="col-4"><%= IncidentList[count].Description %></td>
-                        <td class="text-center col-1"><%= IncidentList[count].Price %></td>
                         <td class="text-center col-1">
                             <a href="/incidentslist/edit/<%= IncidentList[count]._id%>"
                                 class="btn btn-primary btn-sm">

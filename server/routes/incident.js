@@ -45,10 +45,9 @@ router.post('/add',async(req,res,next)=>{
     try{
         let newIncident = Incident({
             "Name":req.body.Name,
-            "Author":req.body.Author,
-            "Published":req.body.Published,
+            "Time":req.body.Time,
+            "Location":req.body.Location,
             "Description":req.body.Description,
-            "Price":req.body.Price,
         })
         Incident.create(newIncident).then(()=>{
             res.redirect('/incidentslist');
@@ -88,10 +87,9 @@ router.post('/edit/:id',async(req,res,next)=>{
         let updatedIncident = Incident({
             "_id":id,
             "Name":req.body.Name,
-            "Author":req.body.Author,
-            "Published":req.body.Published,
+            "Time":req.body.Time,
+            "Location":req.body.Location,
             "Description":req.body.Description,
-            "Price":req.body.Price
         });
         Incident.findByIdAndUpdate(id,updatedIncident).then(()=>{
             res.redirect('/incidentslist')

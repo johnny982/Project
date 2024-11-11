@@ -8,29 +8,24 @@
             <h1><%= title %></h1>
             <form class="form" method="POST">
                 <div class="form-group">
-                    <label for="nameTextField">Incident Title</label>
+                    <label for="nameTextField">Your Name</label>
                     <input type="text" class="form-control" id="nameTextField"
-                    placeholder="Enter Incident Title" name="Name" value='<%= Incident.Name %>' required>
+                    placeholder="Enter Your Name" name="Name" value='<%= Incident.Name %>' required>
                 </div>
                 <div class="form-group">
-                    <label for="authorTextField">Incident Author</label>
-                    <input type="text" class="form-control" id="authorTextField"
-                    placeholder="Enter Author Name" name="Author" value='<%= Incident.Author %>' required>
+                    <label for="timeTextField">Time of Incident</label>
+                    <input type="text" class="form-control" id="timeTextField"
+                    placeholder="Enter Incident Time" name="Time" value='<%= Incident.Time %>' required>
                 </div>
                 <div class="form-group">
-                    <label for="publishedTextField">Published</label>
-                    <input type="text" class="form-control" id="publishedTextField"
-                    placeholder="Enter Published Year" name="Published" value='<%= Incident.Published %>' required>
+                    <label for="locationTextField">Location of Incident</label>
+                    <input type="text" class="form-control" id="locationTextField"
+                    placeholder="Enter Incident Location" name="Location" value='<%= Incident.Location %>' required>
                 </div>
                 <div class="form-group">
                     <label for="descriptionTextArea">Incident Description</label>
                     <textarea type="text" class="form-control" id="descriptionTextArea"
                     placeholder="Enter Incident Description" name="Description" required><%= Incident.Description %></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="priceTextField">Incident Price</label>
-                    <input type="text" class="form-control" id="priceTextField"
-                    placeholder="Enter Incident Price" name="Price" value='<%= Incident.Price %>' required>
                 </div>
                 <button class="btn btn-primary" type="submit">Submit <i class="fas fa-edit"></i></button>
                 <button class="btn btn-warning" onclick="window.history.back()">Cancel <i class="fas fa-undo"></i></button>
