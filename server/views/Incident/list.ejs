@@ -1,13 +1,13 @@
 <% include ../Partials/header.ejs%>
 <% include ../Partials/main_nav.ejs%>
-    <!-- Book Database -->
+    <!-- Incident Database -->
     <main class = "container">
         <div class = "row">
             <div class = "offset-md-1 col-md-10">
                 <h1><%= title %></h1>
                 <br>
-                <a href="/bookslist/add" class="btn btn-primary" role="button">
-                    <i class="fas fa-plus-circle"></i> Add Book</a>
+                <a href="/incidentslist/add" class="btn btn-primary" role="button">
+                    <i class="fas fa-plus-circle"></i> Add Incident</a>
                 <table class="table table-bordered table-striped table-hover">
                     <tr class="d-flex">
                         <th class="text-center col-2">Name</th>
@@ -16,21 +16,21 @@
                         <th class="text-center col-4">Description</th>
                         <th class="text-center col-1">Price</th>
                     </tr>
-                    <% for(let count=0;count<BookList.length;count++) { %>
+                    <% for(let count=0;count<IncidentList.length;count++) { %>
                     <tr class="d-flex">
-                        <td class="text-center col-2"><%= BookList[count].Name %></td>
-                        <td class="text-center col-2"><%= BookList[count].Author %></td>
-                        <td class="text-center col-1"><%= BookList[count].Published%></td>
-                        <td class="col-4"><%= BookList[count].Description %></td>
-                        <td class="text-center col-1"><%= BookList[count].Price %></td>
+                        <td class="text-center col-2"><%= IncidentList[count].Name %></td>
+                        <td class="text-center col-2"><%= IncidentList[count].Author %></td>
+                        <td class="text-center col-1"><%= IncidentList[count].Published%></td>
+                        <td class="col-4"><%= IncidentList[count].Description %></td>
+                        <td class="text-center col-1"><%= IncidentList[count].Price %></td>
                         <td class="text-center col-1">
-                            <a href="/bookslist/edit/<%= BookList[count]._id%>"
+                            <a href="/incidentslist/edit/<%= IncidentList[count]._id%>"
                                 class="btn btn-primary btn-sm">
                                 <i class="fas fa-pencil-alt"></i> Edit
                             </a>
                         </td>
                         <td class="text-center col-1">
-                            <a href="/bookslist/delete/<%= BookList[count]._id%>"
+                            <a href="/incidentslist/delete/<%= IncidentList[count]._id%>"
                                 class="btn btn-danger btn-sm">
                                 <i class="fas fa-trash-alt"></i> Delete
                             </a>

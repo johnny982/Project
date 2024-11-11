@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-let bookModel = mongoose.Schema({
+let incidentModel = mongoose.Schema({
     Name: String,
     Author: String,
     Published: String,
@@ -12,4 +12,4 @@ let bookModel = mongoose.Schema({
 }
 );
 
-module.exports = mongoose.model('Book', bookModel);
+module.exports = mongoose.model('Incident', incidentModel);
