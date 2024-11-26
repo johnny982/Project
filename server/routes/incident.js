@@ -8,6 +8,13 @@ let incidentController = require('../controllers/incident.js')
 /* get route for the incident list - Read Operation */
 // GET, POST, PUT (Edit/Update)
 
+function requireAuth(req,res,next){
+    if(!req.isAuthenticated()){
+        return res.redirect('/login');
+    }
+    next();
+}
+
 /* Read Operation --> get route for displaying the incidents list */
 
 router.get('/',async(req,res,next)=>{
