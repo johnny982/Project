@@ -4,7 +4,21 @@
 
 ## Versions
 
-* **1.0.1**
+* **[2.0.0]**
+    * Updated README for Part II commits.
+
+* **[1.2.0](https://github.com/johnny982/Project/commit/3b41b3f976f4ad47465f8dbff401ca6d3661d0d5)**
+    * Updating/deleting database requires to be logged in.
+
+* **[1.1.0](https://github.com/johnny982/Project/commit/79bfd13b0d4b1306b1290e01a375bdd817d8138b)**
+    * Created pages to login and register.
+    * Created item on nav bar to login/register.
+    * Item changes when logged in vs logged out.
+
+* **[1.0.2](https://github.com/johnny982/Project/commit/7ec3028efd868dfc58da4126e784c15adcce9463)**
+    * Installed required modules.
+
+* **[1.0.1](https://github.com/johnny982/Project/commit/d582f3630fe2d27e883060523edf3abbd43156cf)**
     * Created README.
 
 * **[1.0.0](https://github.com/johnny982/Project/commit/50c321c5d3a7b4434df6e00d91c220a18fe6c7d3)**
