@@ -12,9 +12,9 @@ body{
 }
 
 #logo{
-    max-width: 50%;
+    max-width: 50%; /*use max width to make sure the logo doesnt get bigger than the specified max with*/
 }
 
 .indextext{
-    font-weight: bolder;
+    font-weight: bolder; /* setting the boldness of the text*/  
 }
