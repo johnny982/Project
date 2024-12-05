@@ -1,17 +1,22 @@
 # Project
 * **Part I:** 0.0.1 - 1.0.0
 * **Part II:** 1.0.1 - 2.0.0
-* **Part III:** 2.1.0-3.0.0
+* **Part III:** 2.1.0 - 3.0.0
 
 ## Versions
 
-* **2.1.1**
-    * Changed the styling.
+* **[3.0.0](https://github.com/johnny982/Project/commit/36430313ddfa3d2fcd95750b41b6e3d4439643a9)**
+   * **Part III**
+   * Updated CSS
+
+* **[2.1.1](https://github.com/johnny982/Project/commit/d559a1bfe0e10a4c8fee2c09e1572fe1c842797f)**
+    * Tweaked the styling.
 
 * **[2.1.0](https://github.com/johnny982/Project/commit/b6ff1f5d9691a178a27f0da3310168816e3e87b3)**
     * Added some styling.
 
 * **[2.0.0](https://github.com/johnny982/Project/commit/75a5fb81b6ea0136e6aecdf9f6feeb892d5bdcdd)**
+    * **Part II**
     * Updated README for Part II commits.
 
 * **[1.2.0](https://github.com/johnny982/Project/commit/3b41b3f976f4ad47465f8dbff401ca6d3661d0d5)**
@@ -29,6 +34,7 @@
     * Created README.
 
 * **[1.0.0](https://github.com/johnny982/Project/commit/50c321c5d3a7b4434df6e00d91c220a18fe6c7d3)**
+    * **Part I**
     * Increased home page text size.
     * FIXED: add placeholder not showing.
 
