@@ -1,10 +1,17 @@
 # Project
 * **Part I:** 0.0.1 - 1.0.0
 * **Part II:** 1.0.1 - 2.0.0
+* **Part III:** 2.1.0-3.0.0
 
 ## Versions
 
-* **[2.0.0]**
+* **2.1.1**
+    * Changed the styling.
+
+* **[2.1.0](https://github.com/johnny982/Project/commit/b6ff1f5d9691a178a27f0da3310168816e3e87b3)**
+    * Added some styling.
+
+* **[2.0.0](https://github.com/johnny982/Project/commit/75a5fb81b6ea0136e6aecdf9f6feeb892d5bdcdd)**
     * Updated README for Part II commits.
 
 * **[1.2.0](https://github.com/johnny982/Project/commit/3b41b3f976f4ad47465f8dbff401ca6d3661d0d5)**
@@ -53,8 +60,8 @@
     * **Initial Commit.**
     * Repo setup.
 
-## Notes
-* Placeholder
-
 ## Credits
-* [Placeholder](https://www.google.com/)
+* [CSS flex-direction Property](https://www.w3schools.com/cssref/css3_pr_flex-direction.php)
+* [CSS font-weight Property](https://www.w3schools.com/cssref/pr_font_weight.php)
+* [CSS Layout - Horizontal & Vertical Align](https://www.w3schools.com/css/css_align.asp)
+* [CSS Viewport Units: vh, vw, vmin, and vmax](https://www.sitepoint.com/css-viewport-units-quick-start/)
